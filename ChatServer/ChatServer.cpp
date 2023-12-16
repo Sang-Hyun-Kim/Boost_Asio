@@ -33,10 +33,8 @@ public:
 	// 멤버 목록에 등록된 모든 대상에게 메세지를 전송
 	void Broadcast(const std::string& msg)
 	{
-		cout <<"----  start ----" << endl;
 		for (const auto member : _members)
 			member->SendChat(msg);
-		cout <<"---- debug end ----" << endl;
 	}
 private:
 	std::set<ChatMemberPtr> _members;
@@ -117,6 +115,7 @@ private:
 	const static int SendBufferSize = 1024;
 	char _sendBuffer[SendBufferSize];
 	ChatRoom& _room;
+	int count = 0;
 };
 using ChatSessionPtr = std::shared_ptr<ChatSession>;
 
