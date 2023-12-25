@@ -150,13 +150,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="..\..\..\..\Downloads\protobuf-3.20.2\MakeBuild\Debug\Protocol.proto" />
+    <None Include="..\Debug\Chat.proto" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Chat.pb.cc" />
+    <ClCompile Include="ChatClient.cpp" />
+    <ClCompile Include="ChatServer.cpp" />
     <ClCompile Include="header.cpp" />
+    <ClCompile Include="Packet.h" />
     <ClCompile Include="protobuf.cpp" />
     <ClCompile Include="Protocol.pb.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Chat.pb.h" />
     <ClInclude Include="Protocol.pb.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

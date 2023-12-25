@@ -7,20 +7,44 @@
     <ClCompile Include="Protocol.pb.cc">
       <Filter>Protobuf</Filter>
     </ClCompile>
-    <ClCompile Include="header.cpp" />
+    <ClCompile Include="header.cpp">
+      <Filter>PacketHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="Chat.pb.cc">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatServer.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="Packet.h">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatClient.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Protobuf">
       <UniqueIdentifier>{9bdfe3ca-24e6-4b67-8e37-fd922e78ff3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHeader">
+      <UniqueIdentifier>{ba0e7ce2-e23d-4417-b1dc-767708738b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chat">
+      <UniqueIdentifier>{39b9e093-5a86-4bc9-8721-7f07f79de528}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Protocol.pb.h">
       <Filter>Protobuf</Filter>
     </ClInclude>
+    <ClInclude Include="Chat.pb.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\Downloads\protobuf-3.20.2\MakeBuild\Debug\Protocol.proto">
+      <Filter>Protobuf</Filter>
+    </None>
+    <None Include="..\Debug\Chat.proto">
       <Filter>Protobuf</Filter>
     </None>
   </ItemGroup>
