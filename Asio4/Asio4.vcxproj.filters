@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\protobuf-3.20.2\MakeBuild\Debug\sumproto.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Sum">
+      <UniqueIdentifier>{7e6f40b9-27ac-4780-95a3-8c10c25eb457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BreakPad">
+      <UniqueIdentifier>{7c6c1b36-e3bb-4b40-8763-8fe267c1cf4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpdLog">
+      <UniqueIdentifier>{f9add22c-997d-4a32-9e60-55977f6af72f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sumproto.pb.cc">
+      <Filter>Sum</Filter>
+    </ClCompile>
+    <ClCompile Include="SumServer.cpp">
+      <Filter>Sum</Filter>
+    </ClCompile>
+    <ClCompile Include="SumClient.cpp">
+      <Filter>Sum</Filter>
+    </ClCompile>
+    <ClCompile Include="SpdLogTest.cpp">
+      <Filter>SpdLog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sumproto.pb.h">
+      <Filter>Sum</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>Sum</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
